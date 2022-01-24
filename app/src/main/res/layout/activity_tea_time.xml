@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bkg4"
+        android:layout_height="match_parent"
+        tools:context=".TeaTime">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Tea/Drink timmings?"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <Spinner
+                android:id="@+id/drinking_spinner"
+                android:layout_width="154dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/cardview_shadow_start_color"
+                android:hint="Enter Tea/Drink Subject"
+                android:padding="10dp" />
+
+            <Spinner
+                android:id="@+id/drinking_times"
+                android:layout_width="154dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/cardview_shadow_start_color"
+                android:hint="Enter Tea/Drink Subject"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <TimePicker
+            android:id="@+id/time_picker_tea"
+            android:layout_width="300dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:theme="@style/AppTheme"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_set_teatime"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
+                android:text="Next >>" />
+
+            <Button
+                android:id="@+id/button_skip"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
+                android:text="Skip" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

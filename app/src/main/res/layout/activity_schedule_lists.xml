@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bkg4"
+    tools:context=".ScheduleLists">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Schedule"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:gravity="center">
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_today_event"
+            android:layout_height="40dp"
+            android:layout_width="170dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/white"
+            android:text="Today's" />
+
+        <Button
+            android:id="@+id/button_tomorrow_event"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/white"
+            android:text="Tommorrow's" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/schedule_event_list"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:background="@color/cardview_shadow_start_color"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

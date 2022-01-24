@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bkg4">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Appointments">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Appointment date"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="20dp"/>
+        <Spinner
+            android:id="@+id/spinner_apt"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:background="@color/cardview_shadow_start_color"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/tv_appointment_info"
+            android:layout_marginTop="20dp"
+            android:textStyle="italic"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="30dp"
+            android:text="Information"
+            android:textSize="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="5dp">
+
+            <Spinner
+                android:id="@+id/spinner_select_day_date"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@color/cardview_shadow_start_color"
+                android:layout_marginTop="0dp"
+                android:padding="0dp"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <TimePicker
+            android:layout_width="300dp"
+            android:layout_height="380dp"
+            android:layout_gravity="center"
+            android:id="@+id/timePicker_appointment"
+            android:background="@color/cardview_shadow_start_color"
+            android:theme="@style/AppTheme"
+            android:visibility="invisible"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="right"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button_set_AppointmentTime"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="250dp"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:text="Next"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

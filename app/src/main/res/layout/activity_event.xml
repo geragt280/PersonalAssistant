@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bkg4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".Event">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add events"
+            android:textSize="40dp"
+            android:layout_marginBottom="70dp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/date_pick"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Your Date"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:background="@color/cardview_shadow_start_color"
+            android:layout_marginTop="70dp"
+            />
+        <Button
+            android:id="@+id/button_show"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="105dp"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="-32dp"
+            android:text="Pick Date" />
+        <TextView
+            android:id="@+id/time_pick"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Your Time"
+            android:background="@color/cardview_shadow_start_color"
+            android:textColorHint="@color/white"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"/>
+
+            <Button
+                android:id="@+id/button_showTime"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="250dp"
+                android:background="@drawable/custom_button"
+                android:layout_marginTop="-34dp"
+                android:text="Pick time" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+    <Button
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:text="Set RingTone"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/custom_button"
+                android:layout_marginTop="250dp"
+                android:id="@+id/button_setRingtone"/>
+
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/custom_button"
+            android:text="Next >>" />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
